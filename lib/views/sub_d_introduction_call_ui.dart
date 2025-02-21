@@ -10,6 +10,41 @@ class SubDIntroductionCallUI extends StatefulWidget {
 class _SubDIntroductionCallUIState extends State<SubDIntroductionCallUI> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Center(
+      child: Column(
+        children: [
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.02,
+          ),
+          Image.asset('assets/icon/last.png'),
+          SizedBox(height: 80),
+          Text(
+            "น้ำไม่ไหล\nไฟฟ้าดับ\nโทรไม่ติด\nอินเตอร์เน็ตมีปัญหา\nเข้า Social Media ไม่ได้\nรอไม่ได้",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 20,
+            ),
+          ),
+          Text(
+            'โทรเลย!!',
+            style: TextStyle(
+              color: Colors.red,
+              fontSize: 20,
+            ),
+          ),
+          SizedBox(height: 50),
+          Text(
+            'สายด่วน\nสาธารณูปโภค',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }

@@ -10,6 +10,41 @@ class SubAIntroductionCallUI extends StatefulWidget {
 class _SubAIntroductionCallUIState extends State<SubAIntroductionCallUI> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Center(
+      child: Column(
+        children: [
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.02,
+          ),
+          Image.asset('assets/icon/travel.png'),
+          SizedBox(height: 80),
+          Text(
+            "เมื่อต้องเดินทางทั้งในเมือง ออกต่างจังหวัด\nจะใกล้หรือไกลเพียงใด\nสอบถามข้อมูลการเดินทาง การจราจร\nทางด่วน ทางหลัก ทางรอง\nเส้นทางเลี่ยงการจราจรติดขัด\nข้อมูลรถทัวร์ รถไฟ ขสมก. BTS MRT\nชักช้าอยู่ใย",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 20,
+            ),
+          ),
+          Text(
+            'โทรเลย!!',
+            style: TextStyle(
+              color: Colors.red,
+              fontSize: 20,
+            ),
+          ),
+          SizedBox(height: 50),
+          Text(
+            'สายด่วน\nการเดินทาง',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
