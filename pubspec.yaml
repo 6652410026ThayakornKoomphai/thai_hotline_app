@@ -30,7 +30,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.8
   google_fonts: ^6.2.1 # font from google
   font_awesome_flutter: ^10.8.0 # weird icon from font awesome
   introduction_screen: ^3.1.14
